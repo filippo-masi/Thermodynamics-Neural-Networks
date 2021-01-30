@@ -22,5 +22,5 @@ learningRate=1e-4; nEpochs=10; bSize=10
 historyTraining=ThermoANN.setTraining(ThermoANN,uN_T,oN_T,uN_V,oN_V,learningRate,nEpochs,bSize)
 ThermoANN.evaluate(uN_T,oN_T); ThermoANN.evaluate(uN_V,oN_V); ThermoANN.evaluate(uN_Tt,oN_Tt)
 if silent==False: print("\n... Saving weights")
-ThermoANN.save_weights('./output_data/ThermoTANN_weights_try', save_format='tf')
+ThermoANN.save_weights('./output_data/ThermoTANN_weights', save_format='tf')
 print("\n... Completed!")
