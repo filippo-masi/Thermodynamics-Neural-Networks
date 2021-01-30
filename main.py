@@ -18,7 +18,7 @@ if silent_summary==False: print(ThermoANN.summary())
 
 # Training, evaluation against training, validation, and test data-sets, and weights export
 if silent==False: print("\n... Training")
-learningRate=1e-4; nEpochs=10; bSize=10
+learningRate=1e-4; nEpochs=1000; bSize=10
 historyTraining=ThermoANN.setTraining(ThermoANN,uN_T,oN_T,uN_V,oN_V,learningRate,nEpochs,bSize)
 ThermoANN.evaluate(uN_T,oN_T); ThermoANN.evaluate(uN_V,oN_V); ThermoANN.evaluate(uN_Tt,oN_Tt)
 if silent==False: print("\n... Saving weights")
