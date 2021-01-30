@@ -1,0 +1,2 @@
+model_checkpoint_path: "ThermoTANN_weights_try"
+all_model_checkpoint_paths: "ThermoTANN_weights_try"
